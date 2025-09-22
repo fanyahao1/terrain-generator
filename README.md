@@ -24,12 +24,23 @@ pip install -e .
 
 # Usage
 To run a testing script run as follows.
+I would recommend first run these scripts to generate some primitive meshes.
 ```bash
-conda activate wfc
-python3 examples/generate_with_wfc.py
+conda activate terrain_generator
+python3 examples/create_primitive_course.py
+```
+
+## Structured terrain
+```bash
+python3 examples/generate_with_wfc.py [--visualize]  # visualze param to visualize the terrain generated.
 ```
 This will first generate all configured meshes and then build different combinations.
 Once the mesh is generated, it is stored as cache and reused for the next time.
+
+## Mountains
+```bash
+python3 examples/generate_mountain.py
+```
 
 You can make your own config to generate different terrians.
 
@@ -44,6 +55,3 @@ Please cite the following paper if you use this software.
   year={2024}
 }
 ```
-
-# Config
-TODO
