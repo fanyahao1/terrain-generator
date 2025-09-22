@@ -1,4 +1,4 @@
-name: wfc
+name: terrain_generator
 channels:
   - defaults
 dependencies:
